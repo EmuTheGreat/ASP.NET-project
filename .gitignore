@@ -2,3 +2,6 @@
 PostApi/.vs/PostApi/FileContentIndex/5f57baff-cf47-4659-961d-a9aabbb39820.vsidx
 PostApi/.vs/PostApi/FileContentIndex/b2f0d188-fc46-4e38-8037-3354a6d81ad6.vsidx
 PostApi/.vs/PostApi/v17/.suo
+*.bin
+*.v2
+*.vsidx
