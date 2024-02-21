@@ -27,27 +27,27 @@ app.Run();
 public class Post
 {
     /// <summary>
-    /// Уникальный индентификатор для каждого поста.
+    /// A unique identifier for each post.
     /// </summary>
     public uint Id { get; set; }
 
     /// <summary>
-    /// Идентификатор автора поста.
+    /// Post author ID.
     /// </summary>
     public uint AuthorId { get; set; }
 
     /// <summary>
-    /// Текст поста.
+    /// Post text.
     /// </summary>
     public string? Text { get; set; }
 
     /// <summary>
-    /// Время создания.
+    /// Time of creation.
     /// </summary>
     public DateTime Time { get; set; }
 
     /// <summary>
-    /// Кол-во лайков.
+    /// Number of likes.
     /// </summary>
     public uint LikeNumber { get; set; }
 }

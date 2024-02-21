@@ -7,7 +7,7 @@ namespace PostApi.Controllers
         [Route("[action]")]
         [HttpPost]
         /// <summary>
-        /// Создать пост.
+        /// Create a post.
         /// </summary>
         public async Task<IActionResult> CreatePost(uint AuthorId, string Text)
         {
@@ -17,7 +17,7 @@ namespace PostApi.Controllers
         [Route("[action]")]
         [HttpGet]
         /// <summary>
-        /// Получить все посты автора.
+        /// Get all posts by the author.
         /// </summary>
         public async Task<IActionResult> GetPostsAsync(uint AuthorID)
         {
@@ -27,7 +27,7 @@ namespace PostApi.Controllers
         [Route("[action]")]
         [HttpGet]
         /// <summary>
-        /// Получить комментарии поста.
+        /// Get post comments.
         /// </summary>
         public async Task<IActionResult> GetCommentsAsync(uint AuthorID, uint PostId)
         {
