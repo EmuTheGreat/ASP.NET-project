@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "ISePrvx+rn5MCVHctKmrf6847HDP0x31TP36z1vJEcAD7Il9+CEJwKt37QH9CtG0BqOGR4reHg/fKnKB9J48Hw==",
+  "success": true,
+  "projectFilePath": "E:\\projects\\ASP-project\\ASP.NET-project\\PostApi\\PostApi\\PostApi.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\thegr\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\thegr\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\thegr\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
+    "C:\\Users\\thegr\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
+    "C:\\Users\\thegr\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
+    "C:\\Users\\thegr\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.4.0\\swashbuckle.aspnetcore.swaggerui.6.4.0.nupkg.sha512"
+  ],
+  "logs": []
+}
