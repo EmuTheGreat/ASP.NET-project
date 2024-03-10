@@ -24,30 +24,30 @@ app.MapControllers();
 
 app.Run();
 
-public class Post
-{
-    /// <summary>
-    /// A unique identifier for each post.
-    /// </summary>
-    public uint Id { get; set; }
+//public class Post
+//{
+//    /// <summary>
+//    /// A unique identifier for each post.
+//    /// </summary>
+//    public uint Id { get; set; }
 
-    /// <summary>
-    /// Post author ID.
-    /// </summary>
-    public uint AuthorId { get; set; }
+//    /// <summary>
+//    /// Post author ID.
+//    /// </summary>
+//    public uint AuthorId { get; set; }
 
-    /// <summary>
-    /// Post text.
-    /// </summary>
-    public string? Text { get; set; }
+//    /// <summary>
+//    /// Post text.
+//    /// </summary>
+//    public string? Text { get; set; }
 
-    /// <summary>
-    /// Time of creation.
-    /// </summary>
-    public DateTime Time { get; set; }
+//    /// <summary>
+//    /// Time of creation.
+//    /// </summary>
+//    public DateTime Time { get; set; }
 
-    /// <summary>
-    /// Number of likes.
-    /// </summary>
-    public uint LikeNumber { get; set; }
-}
+//    /// <summary>
+//    /// Number of likes.
+//    /// </summary>
+//    public uint LikeNumber { get; set; }
+//}
