@@ -16,11 +16,11 @@ namespace WebApi.Controllers
 
         [Route("get/{id}")]
         [HttpGet]
-        [ProducesResponseType<User>(200)]
+        [ProducesResponseType(200)]
         public async Task<IActionResult> GetUser(uint id)
         {
             var user = await _userService.GetUserAsync(id);
-            return Ok(user);
+            return Ok(new {UserId = user.Id, Name = user.Name});
         }
 
         [Route("getOnline")]

@@ -1,27 +1,21 @@
-using Domain;
-using ExampleCore.HttpLogic;
+using Dal;
+using Logic;
 using ExampleCore.TraceIdLogic;
-using Infrastructure;
-using Microsoft.Extensions.ObjectPool;
-using ProfileConnectionLib.ConnectionServices.RabbitConnectionServer;
-using RabbitMQ.Client;
+using ExampleCore.HttpLogic;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.TryAddTraceId();
-builder.Services.AddHttpRequestService();
-builder.Services.TryAddDomain();
-builder.Services.TryAddInfrastructure();
+
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddSingleton<ObjectPool<IConnection>>(serviceProvider =>
-{
-    return new DefaultObjectPool<IConnection>(new RabbitConnectionPool("localhost"), Environment.ProcessorCount * 2);
-});
+builder.Services.TryAddTraceId();
+builder.Services.AddHttpRequestService();
+builder.Services.TryAddLogic();
+builder.Services.TryAddDal();
 
 var app = builder.Build();
 
